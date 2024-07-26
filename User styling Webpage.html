@@ -1,0 +1,78 @@
+<html>
+    <head>
+        
+        <style>
+            details > summary{
+                padding: 4px;
+                width: 200px;
+                background-color: #eeeeee;
+                border: none;
+                box-shadow: 1px 1px 2px #bbbbbb;
+                cursor: pointer;
+            }
+            div{
+                margin:200px;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        
+    </head>
+    <body id="demo">
+        <h1 id="test"><u>HTML, CSS & JS</u></h1>
+        <h2>HTML</h2>
+        <P>jsdbfkjs fkjfkf ahfioewwekw goweihwoeghensd oweihghewgon g oihfelha ngeoirwhwnsg ;a;hehewn owihegowheogn n oeifhiowhgiohqoeg nqohfoqhfiofqw  qofhqfoqwihfoqnfw qwfoqihfqofqof</P>
+        <h2>CSS</h2>
+        <P>jsdbfkjs fkjfkf ahfioewwekw goweihwoeghensd oweihghewgon g oihfelha ngeoirwhwnsg ;a;hehewn owihegowheogn n oeifhiowhgiohqoeg nqohfoqhfiofqw  qofhqfoqwihfoqnfw qwfoqihfqofqof</P>
+        <h2>JS</h2>
+        <P>jsdbfkjs fkjfkf ahfioewwekw goweihwoeghensd oweihghewgon g oihfelha ngeoirwhwnsg ;a;hehewn owihegowheogn n oeifhiowhgiohqoeg nqohfoqhfiofqw  qofhqfoqwihfoqnfw qwfoqihfqofqof</P>
+        <details>
+            <summary>details</summary>
+            <ul>
+                <li>sahan</li>
+                <li>sahan</li>
+                <li>sahan</li>
+                <li>sahan</li>
+                <li>sahan</li>
+            </ol>
+        </details>
+        <div>
+            <input type="button" value="styl1" onclick="sty1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="styl2" onclick="sty2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="styl3" onclick="sty3()">
+        </div>
+        <script>
+            function sty1(){
+                let el1=document.getElementById("demo");
+                el1.style.backgroundColor="yellow";
+                el1.style.color="red";
+                let el2=document.getElementById("test");
+                el2.style.fontSize="40px";
+                let headings=document.getElementsByTagName("h2");
+                for (let heading of headings)
+                {
+                    heading.style.color="black"
+                    heading.style.fontSize="35px"
+                }
+                let parag=document.getElementsByTagName("p");
+                for (let para of parag)
+                {
+                    para.style.borderStyle="solid"
+                    para.style.borderWidth="5px"
+                    para.style.padding="15px"
+                    
+                }
+            }
+            function sty2(){
+                let el1=document.getElementById("demo");
+                el1.style.backgroundColor="cyan";
+                el1.style.color="purple";
+            }
+            function sty3(){
+                let el1=document.getElementById("demo");
+                el1.style.backgroundColor="green";
+                el1.style.color="white";
+            }
+        </script>
+    </body>
+</html>
